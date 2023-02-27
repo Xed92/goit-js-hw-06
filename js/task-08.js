@@ -11,7 +11,7 @@ function handleFormSubmit(event) {
   if (email.value === "" || password.value === "") {
     return alert("Все поля должны быть заполнены!");
   }
-
-  console.log(`email: ${email.value}, Password: ${password.value}`);
+  const user = { email: `${email.value}`, Password: `${password.value}` };
+  console.log(user);
   event.currentTarget.reset();
 }
